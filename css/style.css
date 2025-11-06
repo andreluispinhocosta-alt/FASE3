@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* LAYOUT PRINCIPAL E CENTRALIZAÇÃO */
+.app{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0.1);
+    border-radius: 15px ;
+}
+
+body{
+    background-color: #f0f0f5;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ESTILIZAÇÃO DOS CARDS E SEÇÕES */
+.apresentacao{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #e0f2f1;
+    text-align: center;
+}
+
+.apresentacao h2{
+    color: #00796b;
+    margin-bottom: 5px;
+}
+
+.previsao-itens{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.previsao-itens h2{
+    color: #333;
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+
+.dia2{
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.itens-producao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producao{
+    width: 48%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    min-height: 180px;
+}
+
+.titulo_producao{
+    color: #333;
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left
+}
+
+.producao button{
+    display: block;
+    width: 100%;
+
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+
+.producao button:hover{
+    background-color: #ffaa00;
+    color: #53361a;
+}
+
+.alerta{
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.alerta h2{
+    color: #333;
+    font-size: 19px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ffeeba ;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: left
+}
+.alerta div{
+    display: flex;
+    align-items: center;
+    color: #856404;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
