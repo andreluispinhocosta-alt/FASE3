@@ -9,8 +9,8 @@
 /* LAYOUT PRINCIPAL E CENTRALIZAÇÃO */
 .app{
     width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
+    padding: 15px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100%;
 }
 
@@ -31,21 +31,25 @@ h1{
 
 /* ESTILIZAÇÃO DOS CARDS E SEÇÕES */
 .apresentacao{
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    background-color: #e0f2f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .apresentacao h2{
-    color: #00796b;
+    color: white;
     margin-bottom: 5px;
     font-size: 18px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .apresentacao p {
     font-size: 12px;
+    color: white;
+    opacity: 0.9;
 }
 
 .previsao-itens{
@@ -53,6 +57,7 @@ h1{
     margin-bottom: 15px;
     border-radius: 12px;
     background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +87,8 @@ h1{
 .itens-producao{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
 }
 
 .producao{
@@ -95,8 +101,15 @@ h1{
     padding: 8px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     min-height: 140px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.producao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .producao h3 {
@@ -140,11 +153,11 @@ h1{
 .alerta {
     background: #fff8f0;
     border-left: 6px solid #ff9800;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 10px 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .alerta h2 {
@@ -240,4 +253,212 @@ h1{
 
 .telefone-conteudo::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* CALCULADORA DE SAFRA */
+.calculadora-safra {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100%;
+}
+
+.calc-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    color: white;
+}
+
+.calc-header h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calc-header p {
+    font-size: 12px;
+    opacity: 0.9;
+    color: white;
+}
+
+.calc-form {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.input-group label i {
+    margin-right: 5px;
+    color: #667eea;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-calcular {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-calcular:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.5);
+}
+
+.btn-calcular i {
+    margin-right: 8px;
+}
+
+.calc-resultados {
+    margin-top: 20px;
+}
+
+.calc-resultados h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.calc-resultados h3 i {
+    margin-right: 8px;
+    color: #667eea;
+}
+
+.resultado-card {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.resultado-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.resultado-card.producao {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border-left: 4px solid #00d4ff;
+}
+
+.resultado-card.receita {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-left: 4px solid #ff6b6b;
+}
+
+.resultado-card.media {
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+    border-left: 4px solid #9b59b6;
+}
+
+.resultado-icon {
+    font-size: 28px;
+    margin-right: 12px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+.resultado-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-label {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.resultado-valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producao-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.producao-container .resultado-card.producao {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.btn-comerciantes {
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-comerciantes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.5);
+}
+
+.btn-comerciantes i {
+    font-size: 14px;
 }

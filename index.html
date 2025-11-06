@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrotech</title>
+    <title>AgroConnect</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
@@ -73,7 +73,68 @@
         </div>
         <div class="telefone">
             <div class="telefone-tela">
-                <div class="telefone-conteudo"></div>
+                <div class="telefone-conteudo">
+                    <div class="calculadora-safra">
+                        <header class="calc-header">
+                            <h2><i class="fa-solid fa-calculator"></i> Calculadora de Safra</h2>
+                            <p>Calcule sua produção estimada</p>
+                        </header>
+
+                        <div class="calc-form">
+                            <div class="input-group">
+                                <label><i class="fa-solid fa-ruler-combined"></i> Área (hectares)</label>
+                                <input type="text" placeholder="Ex: 10" value="10">
+                            </div>
+
+                            <div class="input-group">
+                                <label><i class="fa-solid fa-chart-line"></i> Produtividade (t/ha)</label>
+                                <input type="text" placeholder="Ex: 5.5" value="5.5">
+                            </div>
+
+                            <div class="input-group">
+                                <label><i class="fa-solid fa-dollar-sign"></i> Preço por tonelada (R$)</label>
+                                <input type="text" placeholder="Ex: 1200" value="1200">
+                            </div>
+
+                            <button class="btn-calcular">
+                                <i class="fa-solid fa-seedling"></i> Calcular Safra
+                            </button>
+                        </div>
+
+                        <div class="calc-resultados">
+                            <h3><i class="fa-solid fa-chart-pie"></i> Resultados</h3>
+                            
+                            <div class="producao-container">
+                                <div class="resultado-card producao">
+                                    <div class="resultado-icon">📦</div>
+                                    <div class="resultado-info">
+                                        <span class="resultado-label">Produção Total</span>
+                                        <span class="resultado-valor">55.00 t</span>
+                                    </div>
+                                </div>
+                                <button class="btn-comerciantes">
+                                    <i class="fa-solid fa-handshake"></i> Contatar os comerciantes
+                                </button>
+                            </div>
+
+                            <div class="resultado-card receita">
+                                <div class="resultado-icon">💰</div>
+                                <div class="resultado-info">
+                                    <span class="resultado-label">Receita Estimada</span>
+                                    <span class="resultado-valor">R$ 66.000,00</span>
+                                </div>
+                            </div>
+
+                            <div class="resultado-card media">
+                                <div class="resultado-icon">📊</div>
+                                <div class="resultado-info">
+                                    <span class="resultado-label">Média por Hectare</span>
+                                    <span class="resultado-valor">R$ 6.600,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
