@@ -1,84 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrotech</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="./js/script.js">
 </head>
 
 <body>
 
     <h1>Funcionalidades</h1>
 
-    <main class="app">
+    <section class="telefones-container">
+        <div class="telefone">
+            <div class="telefone-tela">
+                <div class="telefone-conteudo">
+                    <main class="app">
+                        <header class="apresentacao">
+                            <h2><i class="fa-solid fa-seedling"></i>AgroConnect</h2>
+                            <p>Olá, Sr. Pedro<br>
+                                Bem-vindo à sua plantação </p>
+                        </header>
+                        <hr>
 
-        <header class="apresentacao">
-            <h2><i class="fa-solid fa-seedling"></i>AgroConnect</h2>
-            <p>Olá, Sr. Pedro<br>
-                Bem-vindo à sua plantação </p>
-        </header>
-        <hr>
+                        <section class="previsao-itens">
+                            <h2><i class="fa-solid fa-cloud-sun"></i> Previsão do Tempo</h2>
+                            <div class="dia2"><strong>Hoje</strong><br>26°C ☀️</div>
+                            <div class="dia2">Amanhã<br>19°C 🌧️</div>
+                            <div class="dia2">Quinta <br>21°C 🌦️</div>
+                            <div class="dia2">Sexta <br>23°C ☁️</div>
+                        </section>
 
-        <section class="previsao-itens">
-            <h2><i class="fa-solid fa-cloud-sun"></i> Previsão do Tempo</h2>
-            <div class="dia2"><strong>Hoje</strong><br>26°C ☀️</div>
-            <div class="dia2">Amanhã<br>19°C 🌧️</div>
-            <div class="dia2">Quinta <br>21°C 🌦️</div>
-            <div class="dia2">Sexta <br>23°C ☁️</div>
+                        <section>
+                            <h2 class="titulo_producao"><i class="fa-solid fa-square-poll-horizontal"></i> Resumo da produção</h2>
 
-        </section>
+                            <div class="itens-producao">
+                                <div class="producao">
+                                    <h3>Alface 🥬</h3>
+                                    <p id="alface"></p>
+                                    <button onclick="atualizarEstoque('alface')">ATUALIZAR ESTOQUE</button>
+                                </div>
 
-        <section>
-            <h2 class="titulo_producao"><i class="fa-solid fa-square-poll-horizontal"></i> Resumo da produção</h2>
+                                <div class="producao">
+                                    <h3>Tomates 🍅</h3>
+                                    <p id="tomates"></p>
+                                    <button onclick="atualizarEstoque('tomates')">ATUALIZAR ESTOQUE</button>
+                                </div>
 
-            <div class="itens-producao">
-            <div class="producao">
-                <h3>Alface 🥬</h3>
-                <br>80 unidades
-                <br>Estoque: 70 un.
-                <br><button>ATUALIZAR ESTOQUE</button>
+                                <div class="producao">
+                                    <h3>Abacaxi 🍍</h3>
+                                    <p id="abacaxi"></p>
+                                    <button onclick="atualizarEstoque('abacaxi')">ATUALIZAR ESTOQUE</button>
+                                </div>
+
+                                <div class="producao">
+                                    <h3>Cenouras 🥕</h3>
+                                    <p id="cenouras"></p>
+                                    <button onclick="atualizarEstoque('cenouras')">ATUALIZAR ESTOQUE</button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="alerta">
+                            <h2><i class="fa-solid fa-triangle-exclamation"></i> Alertas</h2>
+                            <div>⚠️ Possibilidade de temporal de chuva na sexta-feira</div>
+                            <div>⚠️ Estoque de alface baixo</div>
+                        </section>
+                    </main>
+                </div>
             </div>
-
-
-
-            <div class="producao">
-                <h3>Tomates 🍅</h3>
-                <br>120kg colhidos
-                <br>Estoque: 235kg.
-                <br><button>ATUALIZAR ESTOQUE</button>
+        </div>
+        <div class="telefone">
+            <div class="telefone-tela">
+                <div class="telefone-conteudo"></div>
             </div>
+        </div>
+    </section>
+
+    <script>
+        const estoque = {
+            alface: 70,
+            tomates: 235,
+            abacaxi: 100,
+            cenouras: 55
+        };
+
+        function atualizarEstoque(item) {
+            const valor = prompt("Digite o valor a ser adicionado:") || 0
+
+            estoque[item] = parseInt(valor)
+            
+            mostrarEstoque(item)
+        }
+
+        function mostrarEstoque(item) {
+            document.getElementById(item).textContent = `Estoque: ${estoque[item]} unidades.`;
+        }
 
 
-
-            <div class="producao">
-                <h3>Abacaxi 🍍</h3>
-                <br>60 unidades
-                <br>Estoque: 100 un.
-                <br><button>ATUALIZAR ESTOQUE</button>
-            </div>
-
-
-
-            <div class="producao">
-                <h3>Cenouras 🥕</h3>
-                <br>1.2kg colhidos
-                <br>Estoque: 55kg.
-                <br><button>ATUALIZAR ESTOQUE</button>
-            </div>
-            </div>
-        </section>
-
-        <section class="alerta">
-            <h2><i class="fa-solid fa-triangle-exclamation"></i> Alertas</h2>
-            <div>⚠️ Possibilidade de temporal de chuva na sexta-feira</div>
-            <div>⚠️ Estoque de alface baixo</div>
-        </section>
-
-    </main>
+        // Mostra os valores iniciais
+        Object.keys(estoque).forEach(mostrarEstoque);
+    </script>
 </body>
-
 </html>
