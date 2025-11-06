@@ -20,13 +20,16 @@ body{
         linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5)),
         url('../image/calculator.jpg') no-repeat center center fixed;
     background-size: cover;
+    max-width: 100%;
+    background-position: center -310px;
 }
 
-h1{
+.tituloprin{
     text-align: center;
     color: #333;
     font-size: 28px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* ESTILIZAÇÃO DOS CARDS E SEÇÕES */

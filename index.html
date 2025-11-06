@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
 
 <body>
 
-    <h1>Funcionalidades</h1>
+    <h1 class = "tituloprin">FUNCIONALIDADES</h1>
 
     <section class="telefones-container">
         <div class="telefone">
@@ -33,7 +34,8 @@
                         </section>
 
                         <section>
-                            <h2 class="titulo_producao"><i class="fa-solid fa-square-poll-horizontal"></i> Resumo da produção</h2>
+                            <h2 class="titulo_producao"><i class="fa-solid fa-square-poll-horizontal"></i> Resumo da
+                                produção</h2>
 
                             <div class="itens-producao">
                                 <div class="producao">
@@ -64,8 +66,8 @@
 
                         <section class="alerta">
                             <h2><i class="fa-solid fa-triangle-exclamation"></i> Alertas</h2>
-                            <div>⚠️ Possibilidade de temporal de chuva na sexta-feira</div>
-                            <div>⚠️ Estoque de alface baixo</div>
+                            <div>⚠️ Parte do seu estoque de alface vence no dia 09/11/2025</div>
+                            <div>⚠️ Contatar famílias de baixa renda : ESTOQUE EM VENCIMENTO</div>
                         </section>
                     </main>
                 </div>
@@ -103,7 +105,7 @@
 
                         <div class="calc-resultados">
                             <h3><i class="fa-solid fa-chart-pie"></i> Resultados</h3>
-                            
+
                             <div class="producao-container">
                                 <div class="resultado-card producao">
                                     <div class="resultado-icon">📦</div>
@@ -151,17 +153,18 @@
             const valor = prompt("Digite o valor a ser adicionado:") || 0
 
             estoque[item] = parseInt(valor)
-            
+
             mostrarEstoque(item)
         }
 
         function mostrarEstoque(item) {
             document.getElementById(item).textContent = `Estoque: ${estoque[item]} unidades.`;
         }
- 
+
 
         // Mostra os valores iniciais
         Object.keys(estoque).forEach(mostrarEstoque);
     </script>
 </body>
+
 </html>
