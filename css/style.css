@@ -26,7 +26,7 @@ body{
 
 .tituloprin{
     text-align: center;
-    color: #333;
+    color: #000;
     font-size: 28px;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -37,7 +37,7 @@ body{
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 15px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);;
     text-align: center;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
@@ -136,7 +136,7 @@ body{
     display: block;
     width: 100%;
 
-    background-color: #00796b;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -149,8 +149,9 @@ body{
 }
 
 .producao button:hover{
-    background-color: #ffaa00;
-    color: #53361a;
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+
 }
 
 .alerta {
@@ -270,10 +271,15 @@ body{
     text-align: center;
     margin-bottom: 20px;
     padding: 15px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
     color: white;
+}
+
+.btn-calcular:hover{
+     background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .calc-header h2 {
@@ -330,7 +336,7 @@ body{
 .btn-calcular {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -458,8 +464,8 @@ body{
 }
 
 .btn-comerciantes:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.5);
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);;
 }
 
 .btn-comerciantes i {
