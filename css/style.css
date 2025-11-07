@@ -293,22 +293,6 @@ body{
     overflow-x: hidden;
 }
 
-.telefone-conteudo::-webkit-scrollbar {
-    width: 4px;
-}
-
-.telefone-conteudo::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.telefone-conteudo::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 1px;
-}
-
-.telefone-conteudo::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 /* CALCULADORA DE SAFRA */
 .calculadora-safra {
