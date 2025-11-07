@@ -10,18 +10,18 @@
 .app{
     width: 100%;
     padding: 15px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #f5f7fa;
     min-height: 100%;
 }
 
 body{
     background-color: #f0f0f5;
     background: 
-        linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5)),
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
         url('../image/calculator.jpg') no-repeat center top fixed;
     background-size: cover;
+    background-position: center -310px;
     max-width: 100%;
-    background-position: center top;
     background-attachment: fixed;
 }
 
@@ -153,6 +153,57 @@ body{
     background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 
+}
+
+.vencimento-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.vencimento-info {
+    flex: 1;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #ffbca7 0%, #fd8f6e 100%);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(253, 203, 110, 0.3);
+    border-left: 4px solid #f39c12;
+}
+
+.vencimento-info i {
+    margin-right: 8px;
+    color: #e67e22;
+}
+
+.btn-beneficiados {
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #991111 0%, #ef3838 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-beneficiados:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.5);
+}
+
+.btn-beneficiados i {
+    font-size: 14px;
 }
 
 .alerta {
@@ -337,7 +388,7 @@ body{
 .btn-calcular {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    background: linear-gradient(135deg, #93fbad 0%, #57f571 100%);
     color: white;
     border: none;
     border-radius: 12px;
